@@ -27,9 +27,6 @@ public class DrinksMachine {
                         int count = orders[drink.ordinal()];
                         if (count > 0) {
                             System.out.println(drink.name() + ": " + count);
-                        } else {
-                            System.out.println("Ви нічого не замовили");
-                            break;
                         }
                     }
                     System.out.println("Загальна сума замовлення: " + totalCost);
@@ -61,6 +58,7 @@ public class DrinksMachine {
                     totalCost += drinkPrice;
                     orders[selectedDrink.ordinal()]++;
                     System.out.println("Ваше замовлення: " + selectedDrink.name() + ", Ціна: " + drinkPrice);
+              //      printMenuDrink();
                 } else {
                     System.out.println("Невірний вибір. Спробуйте ще раз.");
                 }
