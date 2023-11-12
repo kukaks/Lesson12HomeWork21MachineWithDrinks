@@ -1,5 +1,5 @@
 
-public class DrinksPrise {
+class DrinksPrise {
 
     static final double COFFEE_PRICE = 2.5;
     static final double TEA_PRICE = 1.8;
