@@ -34,7 +34,7 @@ public class DrinksMachine {
                 } else if (choice >= 1 && choice <= Drinks.values().length) {
                     Drinks selectedDrink = Drinks.values()[choice - 1];
                    // double drinkPrice = 0;
-                    double DrinkPrice = Drinks.getPrice();
+                    double drinkPrice = selectedDrink.getPrice();
 
 //                    switch (selectedDrink) {
 //                        case COFFEE:
