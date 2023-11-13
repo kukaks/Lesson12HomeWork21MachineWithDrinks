@@ -33,29 +33,28 @@ public class DrinksMachine {
                     break;
                 } else if (choice >= 1 && choice <= Drinks.values().length) {
                     Drinks selectedDrink = Drinks.values()[choice - 1];
-                   // double drinkPrice = 0;
-                    double drinkPrice = selectedDrink.getPrice();
+                    double drinkPrice = 0;
 
-//                    switch (selectedDrink) {
-//                        case COFFEE:
-//                            drinkPrice = DrinksPrise.COFFEE_PRICE;
-//                            break;
-//                        case TEA:
-//                            drinkPrice = DrinksPrise.TEA_PRICE;
-//                            break;
-//                        case LEMONADE:
-//                            drinkPrice = DrinksPrise.LEMONADE_PRICE;
-//                            break;
-//                        case MOJITO:
-//                            drinkPrice = DrinksPrise.MOJITO_PRICE;
-//                            break;
-//                        case MINERAL_WATER:
-//                            drinkPrice = DrinksPrise.MINERAL_WATER_PRICE;
-//                            break;
-//                        case COLA:
-//                            drinkPrice = DrinksPrise.COLA_PRICE;
-//                            break;
-//                    }
+                    switch (selectedDrink) {
+                        case COFFEE:
+                            drinkPrice = DrinksPrise.COFFEE_PRICE;
+                            break;
+                        case TEA:
+                            drinkPrice = DrinksPrise.TEA_PRICE;
+                            break;
+                        case LEMONADE:
+                            drinkPrice = DrinksPrise.LEMONADE_PRICE;
+                            break;
+                        case MOJITO:
+                            drinkPrice = DrinksPrise.MOJITO_PRICE;
+                            break;
+                        case MINERAL_WATER:
+                            drinkPrice = DrinksPrise.MINERAL_WATER_PRICE;
+                            break;
+                        case COLA:
+                            drinkPrice = DrinksPrise.COLA_PRICE;
+                            break;
+                    }
                     totalCost += drinkPrice;
                     orders[selectedDrink.ordinal()]++;
                     System.out.println("Ваше замовлення: " + selectedDrink.name() + ", Ціна: " + drinkPrice);
